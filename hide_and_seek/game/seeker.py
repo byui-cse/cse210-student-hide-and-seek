@@ -12,7 +12,7 @@ class Seeker:
         location (integer): The location of the Seeker (1-1000).
         distance (list): The distance travelled with each move.
     """
-
+# 
     def __init__(self):
         """Class constructor. Declares and initializes instance attributes.
 
@@ -21,7 +21,8 @@ class Seeker:
         """
         self.location = random.randint(1, 1000)
         self.distance = [0, 0] # start with two so get_message always works
-    
+
+ 
     def get_message(self):
         """Gets a message from the seeker.
 
@@ -39,6 +40,7 @@ class Seeker:
         elif self.distance[-1] > self.distance[-2]:
             message = "\nI'm running around, but I'll find you..."
         return message
+
 
     def move(self, location):
         """Moves to the given location and keeps track of the distance.

@@ -1,4 +1,3 @@
-import random
 
 class Console:
     """A code template for a computer console. The responsibility of this 
@@ -10,7 +9,8 @@ class Console:
     Attributes:
         prompt (string): The prompt to display on each line.
     """
-     
+
+
     def read(self, prompt):
         """Gets text input from the user through the screen.
 
@@ -23,6 +23,7 @@ class Console:
         """
         return input(prompt)
 
+
     def read_number(self, prompt):
         """Gets numerical input from the user through the screen.
 
@@ -34,7 +35,8 @@ class Console:
             float: The user's input as a float.
         """
         return float(input(prompt))
-        
+
+
     def write(self, text):
         """Displays the given text on the screen. 
 
